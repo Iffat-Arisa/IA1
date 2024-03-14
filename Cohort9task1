@@ -1,0 +1,8 @@
+def numbers_less_k(ele, K):
+return len([idx for idx in range(1, ele + 1) if ele % idx == 0]) <= K
+test_list = [60, 12, 100, 17, 18]
+print("The original list is : " + str(test_list))
+K = 4
+res = list(filter(lambda ele: numbers_less_k(ele, K), test_list))
+print("Filtered elements : " + str(res))
+
